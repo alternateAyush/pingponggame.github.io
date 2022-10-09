@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ping Pong</title>
+  </head>
+  <body id="body">
+    <div id="boundry"></div>
+    <div id="play" class="btn">Play</div>
+    <div id="autoplay" class="btn">AutoPlay</div>
+    <audio id="ballhit">
+      <source src="static/audio/ballhit.mpeg" type="audio/mpeg" />
+    </audio>
+    <audio id="ballmiss">
+      <source src="static/audio/ballmiss.mpeg" type="audio/mpeg" />
+    </audio>
+    <audio id="ballbounce">
+      <source src="static/audio/ballmiss.mpeg" type="audio/mpeg" />
+    </audio>
+    <div class="score btn" id="score-p1">00</div>
+    <div class="score btn" id="score-p2">00</div>
+    <div id="themes">
+      <div class="balls" id="pingpong"></div>
+      <div class="balls" id="football"></div>
+      <div class="balls" id="earth"></div>
+      <div class="balls" id="basketball"></div>
+      <div class="balls" id="cricketball"></div>
+      <div class="balls" id="canonbolt"></div>
+    </div>
+    <div id="ball"></div>
+    <div class="players" id="player1">Player 1</div>
+    <div class="players" id="player2">Player 2</div>
+    <!-- -------------------------------------- -->
+    <script src="script.js"></script>
+  </body>
+</html>

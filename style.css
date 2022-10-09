@@ -1,0 +1,161 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+#boundry{
+    box-sizing: border-box;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 100vh;
+    border: 5px dashed rgb(247,87,0);
+    border-left-color: gray;
+    border-right-color: gray;
+    background-image: url("static/pingpongbackground.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-clip: border-box;
+}
+#ball{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;  
+    top:250px;
+    left: 600px;
+    background-image: url("static/pingpong.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    box-shadow: 10px 10px 30px 0px black;
+
+}
+.players{
+    position: absolute;
+    box-sizing: border-box;
+    width: 150px;
+    height: 25px;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 30px;
+    /* background-color: rgb(66,39,25); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 1;
+    box-shadow: 10px 10px 30px 0px black;
+}
+#player1{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    top:10px;
+    left:600px    
+}
+#player2{
+    background-color: white;
+    color:black;
+    border: 1px solid black;
+    bottom:10px;
+    left:600px    
+}
+#themes{
+    position: absolute;
+    top: 35px;
+    right:10px;
+    width: 50px;
+    height: 300px;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background: transparent;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.balls{
+    width: 38px;
+    height: 38px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    opacity: 0.5;
+    box-sizing: border-box;
+}
+#pingpong{
+    width: 42px;
+    height: 42px;
+    opacity: 1;
+    border-color: red;
+    background-image: url("static/pingpong.png");
+}
+#football{
+
+    background-image: url("static/football.png");
+}
+#earth{
+    background-image: url("static/earth.png");
+}
+#basketball{
+    background-image: url("static/basketball.png");
+}
+#cricketball{
+    background-image: url("static/cricketball.png");
+}
+#canonbolt{
+    background-image: url("static/canonbolt.png");
+}
+
+.btn{
+    z-index: 2;
+    position: absolute;
+    padding: 0px;
+    bottom: 0px;
+    right: 0px;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    width: 70px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+    cursor: pointer;
+}
+#autoplay{
+    bottom: 45px;
+}
+.btn:hover{
+    opacity: 1;
+}
+.score{
+    letter-spacing: 2px;
+    font-size: 2rem;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    opacity: 1;
+    text-shadow: 0 0 3px black, 0 0 5px black;
+}
+#score-p1{
+    top: 5px;
+    left: 10px;
+}
+#score-p2{
+    bottom: 5px;
+    left: 10px;
+}
